@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(24, 31, 15);
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    visibility: hidden;
+    position: relative;
+    color: rgb(89, 143, 143);
+}
+
+.benner-text {
+    line-height: 2;
+    color: rgb(145, 145, 103);
+}
+
+.dis-btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: darkcyan;
+    color: rgb(240, 234, 234);
+    border: 3px solid darkcyan;
+    transition: .5s;
+    border-radius: 10px;
+
+}
+
+.dis-btn span {
+    color: rgb(76, 172, 38);
+    font-weight: 700;
+}
+
+.dis-btn:hover {
+
+    background-color: rgb(240, 234, 234);
+    color: darkcyan;
+}
+
+.banner-title::before {
+
+    visibility: visible;
+    position: absolute;
+    content: "";
+    left: 0px;
+    animation: typing 4s linear infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: "A|";
+    }
+
+    7% {
+        content: "AC|";
+    }
+
+    14% {
+        content: "ACE|";
+    }
+
+    21% {
+        content: "ACE |";
+    }
+
+    28% {
+        content: "ACE S|";
+    }
+
+    35% {
+        content: "ACE Sq|";
+    }
+
+    42% {
+        content: "ACE Sqa|";
+    }
+
+    49% {
+        content: "ACE Sqau|";
+    }
+
+    56% {
+        content: "ACE Sqaud|";
+    }
+
+    63% {
+        content: "ACE Sqaud P|";
+    }
+
+    70% {
+        content: "ACE Sqaud PU|";
+    }
+
+    77% {
+        content: "ACE Sqaud PUB|";
+    }
+
+    84%,
+    89% {
+        content: "ACE Sqaud PUBG|";
+    }
+
+    90% {
+
+        content: "ACE Sqaud PUBG|";
+    }
+
+    91% {
+        content: "ACE Sqaud PUB|";
+    }
+
+    92% {
+        content: "ACE Sqaud PU|";
+    }
+
+    93% {
+        content: "ACE Sqaud P|";
+    }
+
+    94% {
+        content: "ACE Sqaud|";
+    }
+
+    95% {
+        content: "ACE Sqau|";
+    }
+
+    91% {
+        content: "ACE Sqa|";
+    }
+
+    91% {
+        content: "ACE Sq|";
+    }
+
+    98% {
+        content: "ACE S|";
+    }
+
+    99% {
+        content: "ACE |";
+    }
+
+    100% {
+        content: "ACE|";
+    }
+
+
+}
+
+.section-title {
+
+    text-align: center;
+}
+
+.section-title h2 {
+    border-left: 3px solid rgb(47, 165, 255);
+    border-right: 3px solid rgb(47, 165, 255);
+    color: steelblue;
+    margin-bottom: 20px;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    line-height: .5;
+}
+
+.banner-left {
+    flex: 1;
+}
+
+.banner-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-right img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo {
+    height: 260px;
+    width: 280px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.photo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0);
+    transition: 1s;
+
+}
+
+.photo:hover::before {
+    background: rgb(0, 0, 0, .5);
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.border {
+    background-image: linear-gradient(rgb(255, 130, 47), yellow);
+
+    position: absolute;
+    transition: .3s;
+}
+
+.border.border1,
+.border.border3 {
+    height: 4px;
+    width: 270px;
+}
+
+.border.border2,
+.border.border4 {
+    height: 270px;
+    width: 4px;
+}
+
+.border.border1 {
+    top: 5px;
+    left: -100%;
+}
+
+.border.border3 {
+    bottom: 5px;
+    right: -100%;
+}
+
+
+.border.border2 {
+
+    bottom: -100%;
+    left: 5px;
+}
+
+.border.border4 {
+
+    top: -100%;
+    right: 5px;
+}
+
+.photo:hover .border.border4 {
+
+    top: 5px;
+}
+
+.photo:hover .border.border2 {
+
+
+    bottom: 5px;
+}
+
+.photo:hover .border.border3 {
+
+
+    right: 5px;
+}
+
+.photo:hover .border.border1 {
+
+
+    left: 5px;
+}
+
+.photo:hover .photo-content {
+
+
+    bottom: 15px;
+}
+
+.photo-content {
+    bottom: -100px;
+    left: 15px;
+    color: white;
+    position: absolute;
+    transition: 1s;
+}
+
+footer {
+    margin-top: 20px;
+    background: #000;
+    height: 100px;
+    padding-top: 50px;
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+}
